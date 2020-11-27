@@ -1,7 +1,7 @@
 name: Shell Commands
 on: [push]
 jobs:
-  run-shell-commands:
+  run-commands-on-ubuntu:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
@@ -15,7 +15,7 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
-  run-windows-commands:
+  run-commands-on-windows:
     runs-on: windows-latest
     steps:
       - name: Directory Powershell
